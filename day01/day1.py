@@ -1,9 +1,10 @@
 # --- Day 1: The Tyranny of the Rocket Equation ---
-import math
+import sys
+import os
 
 
 def calculate_fuel(mass):
-    return math.floor(mass/3) - 2
+    return mass // 3 - 2
 
 
 def calculate_fuel_4_real(mass, sum):
@@ -17,7 +18,7 @@ def calculate_fuel_4_real(mass, sum):
 def day1():
     sumPart1 = 0
     sumPart2 = 0
-    with open('input-day1.txt') as file:
+    with open(os.path.join(sys.path[0], "input_day1.txt")) as file:
         for line in file:
             sumPart1 += calculate_fuel(int(line))
             sumPart2 += calculate_fuel_4_real(int(line), 0)
