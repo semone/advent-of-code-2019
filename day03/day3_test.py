@@ -2,7 +2,7 @@ import unittest
 from day3 import get_closest_intersection
 
 
-class Day1Tests(unittest.TestCase):
+class Day3Tests(unittest.TestCase):
     def test_get_closest_intersection(self):
         input = ['R8,U5,L5,D3', 'U7,R6,D4,L4']
         input2 = ['R75,D30,R83,U83,L12,D49,R71,U7,L72',
